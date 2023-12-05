@@ -1,0 +1,16 @@
+,parameter,param_set,unit_value,emod_value,min,max,team_default,transformation,type
+0,Antigen_Switch_Rate,,0.28301990032196045,0.28301990032196045,1e-09,1.0,7.65E-10,none,double
+1,Base_Gametocyte_Fraction_Male,,0.17821182310581207,0.16930123195052146,0.05,0.95,0.2,none,double
+2,Base_Gametocyte_Mosquito_Survival_Rate,,0.5864104628562927,0.5864104628562927,0.01,1.0,0.002,none,float
+3,Base_Gametocyte_Production_Rate,,0.4669710397720337,0.4669710397720337,1e-09,1.0,0.0615,none,double
+4,Falciparum_MSP_Variants,,0.41523241996765137,172.0,1.0,1000.0,32,log,integer
+5,Falciparum_Nonspecific_Types,,0.07162944972515106,5.0,1.0,1000.0,76,log,integer
+6,Falciparum_PfEMP1_Variants,,0.7341408729553223,10779.0,1.0,20000.0,1070,log,integer
+7,Fever_IRBC_Kill_Rate,,0.9312951564788818,867.310668481025,0.1,1000.0,1.4,log,float
+8,Gametocyte_Stage_Survival_Rate,,0.9124906659126282,0.9124906659126282,0.01,1.0,0.5886,none,double
+9,Max_Individual_Infections,,0.7872905135154724,20.0,20.0,20.0,3,none,integer
+10,MSP1_Merozoite_Kill_Fraction,,0.02396271377801895,0.02396271377801895,0.01,1.0,0.511735322,none,double
+11,Nonspecific_Antibody_Growth_Rate_Factor,,0.7807318568229675,609.5422322582386,0.01,1000.0,0.5,log,float
+12,Nonspecific_Antigenicity_Factor,,0.06681492179632187,0.06681492179632187,1e-09,1.0,0.4151,none,double
+13,Pyrogenic_Threshold,,0.31922057271003723,11172.720044851303,500.0,35000.0,15000,none,float
+14,Innate_Immune_Variation_Type,,0.6011542081832886,PYROGENIC_THRESHOLD_VS_AGE,0.0,1.0,NONE,IIVT,string
