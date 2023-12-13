@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from load_inputs import load_sites
 import pandas as pd
 import numpy as np
-
+from helpers import load_coordinator_df
 from botorch.utils.transforms import unnormalize
 
 from gpytorch.constraints import Interval, GreaterThan, LessThan
@@ -36,7 +36,10 @@ def my_func(X):
   for my_site in sites:
       if os.path.exists(os.path.join(manifest.simulation_output_filepath,my_site)):
           shutil.rmtree(os.path.join(manifest.simulation_output_filepath,my_site))
-      submit_sim(site=my_site, X=df)
+      
+      coord_df=load_coordinator_df()
+      ns = coord_df.at[my_site, 'nSims']
+      submit_sim(site=my_site, X=df, nSims=ns)
     
   #for my_site in sites:
    #   run_analyzers(site=my_site)
