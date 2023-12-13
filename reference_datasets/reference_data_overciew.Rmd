@@ -1,0 +1,179 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+```{r}
+my_files <- list.files()
+my_files <- my_files[!(my_files %in% c("Cameron_age_incidence_prev.csv","Navrongo_infection_duration.csv","infectiousness_Sapone_2018.csv"))]
+my_files <- my_files[grepl("csv",my_files)]
+
+file_summary <- data.frame(objective=c(),site=c(),months=c(),ages=c(),densities=c(),infectiousness=c())
+
+cameron_sites <- c("ndiop_1993","dielmo_1990")
+
+file_summary <- read.csv("Cameron_age_incidence_prev.csv") %>% filter(Site %in% cameron_sites)
+
+colnames(file_summary) <- tolower(colnames(file_summary))
+
+file_summary %>%
+  filter(!is.na(inc_lar))%>%
+  group_by(site) %>%
+  summarize(ages=length(unique(inc_lar)),
+            months=1,
+            densities=1,
+            infectiousness=1,
+            objective="incidence") -> file_summary
+
+
+for(mf in my_files)
+{
+  obj <- "Unknown"
+  if(grepl("infectiousness",mf)){obj <- "infectiousness"}
+  if(grepl("dens",mf)){obj <- "density"}
+  if(grepl("prev",mf)){obj <- "prevalence"}
+  
+  
+  sub <- read.csv(mf)  
+  colnames(sub) <- tolower(colnames(sub))
+  sub %>% 
+    group_by(site) %>%
+    summarize(months=ifelse("year" %in% colnames(read.csv(mf)),length(unique(interaction(month,year))),length(unique(month))),
+              ages=length(unique(agebin)),
+              densities=ifelse("densitybin" %in% colnames(read.csv(mf)),length(unique(densitybin)),1),
+              infectiousness=ifelse("fraction_infected_bin" %in% colnames(read.csv(mf)),length(unique(fraction_infected_bin)),1)) -> new
+  new$objective <- obj
+  
+  file_summary <- rbind.data.frame(file_summary,new)
+}
+
+
+file_summary %>%
+  mutate(site=tolower(site)) %>%
+  ggplot(aes(y=site,x=ages*months*densities*infectiousness, fill=objective)) +
+  geom_bar(stat="identity",position=position_dodge(preserve = "single"),
+           color="white") +
+  theme_minimal() +
+  xlab("# Target Observations") + ylab("") +
+  theme(legend.position=c(0.85,0.8),
+        legend.background = element_rect(fill="white",color=NA)) +
+  labs(fill=NULL)
+
+file_summary %>%
+  mutate(site=tolower(site)) %>%
+  ggplot(aes(x=objective,y=ages*months*densities*infectiousness, fill=objective)) +
+  facet_wrap(~site,nrow=2) +
+  geom_bar(stat="identity") +
+  theme(axis.text.x=element_blank(),
+        legend.position="top") 
+```
+
+
+```{r}
+o <- read.csv("objective_overview.csv")
+
+o %>%
+  group_by(agebin,objective,Site) %>%
+  summarize(n=sum(n)) %>%
+  group_by(objective,Site) %>%
+  mutate(site_obj_sum = sum(n)) %>%
+  group_by(objective) %>%
+  mutate(obj_sum = sum(n)) %>%
+  ungroup() %>%
+  mutate(tot_sum=sum(n)) -> o_sum
+  
+  
+o_sum %>%
+  ggplot(aes(x=agebin,y=n, fill=agebin, group=agebin)) +
+  geom_path(group=1) +
+  geom_point() +
+  geom_text(aes(x=10,y=0, label=paste(round(site_obj_sum/obj_sum*100,2),"%",sep='')), 
+            color="red", check_overlap = T, vjust=-0.5, hjust=0, size=3)+
+  geom_text(aes(x=60,y=0, label=paste(round(site_obj_sum/tot_sum*100,2),"%",sep='')), 
+            color="blue", check_overlap = T, vjust=-0.5, hjust=0, size=3)+
+  #geom_bar(stat="identity") +
+  #geom_text(aes(label=n),check_overlap = T, color="black") +
+  theme_minimal() +
+  facet_grid(Site~objective, scales="free")
+
+o %>%
+  ggplot(aes(fill=objective)) +
+  geom_bar(aes(x="",y=n),
+           stat="identity",position="fill") + 
+  ylab("Fraction of Total Reference Data Observations") +
+  theme_minimal() +
+  scale_y_continuous(breaks = seq(0,1,0.1))
+
+o %>%
+  ggplot(aes(fill=Site)) +
+  geom_bar(aes(x="",y=n),
+           stat="identity",position="fill") + 
+  ylab("Fraction of Reference Data Observations for Objective") +
+  theme_minimal() +
+  scale_y_continuous(breaks = seq(0,1,0.1))
+sum(o$n)
+
+site_pal = c("#e3342f","#f6993f",
+             "#ffed4a","#38c172",
+             "#4dc0b5","#3490dc",
+             "#6574cd", "#9561e2",
+             "#f66d9b")
+
+obj_pal = c("#E2A36F","#681240","#72982F","#24AFEB","#D09FA4","#7139B1")
+
+o %>%
+  group_by(Site,objective) %>%
+  summarize(n=sum(n)) %>%
+  ggplot(aes(x=Site,
+             y=n/sum(o$n)*100)) +
+  geom_bar(stat="identity", aes(fill=Site),
+           position="dodge", color="white") +
+  theme_minimal() +
+  coord_flip() +
+  xlab("") +
+  ylab("% of overall observations") +
+  scale_fill_manual(values=site_pal) +
+  labs(fill=NULL) +
+  theme(legend.position="none") +
+  facet_wrap(~objective)
+
+
+o %>%
+  group_by(Site,objective) %>%
+  summarize(n=sum(n)) %>%
+  mutate(weight=n/sum(o$n)) %>%
+  #write.csv('objective_weights.csv')
+  ggplot(aes(x=Site,
+             y=n/sum(o$n)*100)) +
+  geom_bar(stat="identity", aes(fill=objective),
+           position="stack", color="white") +
+  theme_minimal() +
+  coord_flip() +
+  xlab("") +
+  ylab("% of overall observations") +
+  scale_fill_manual(values=obj_pal) +
+  labs(fill=NULL) +
+  theme(legend.position="bottom")
+
+
+
+
+o %>%
+  group_by(Site,objective) %>%
+  summarize(n=sum(n)) %>%
+  group_by(objective) %>%
+  mutate(tot=sum(n)) %>%
+  ggplot(aes(x=Site,y=n/tot*100)) +
+  facet_wrap(~objective) +
+  theme_minimal() +
+  ylab("% of observations for objective") +
+  xlab("") +
+  geom_bar(stat="identity",aes(fill=Site),
+           color="white") + 
+  scale_fill_manual(values=site_pal) +
+  coord_flip() +
+  theme(legend.position = "none")
+```
