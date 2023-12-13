@@ -1,6 +1,6 @@
 import os
 import warnings
-
+import sys
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -11,6 +11,8 @@ from scipy.stats import binom
 
 import math
 from scipy.special import gammaln
+
+sys.path.append("../")
 
 from create_plots.helpers_reformat_sim_ref_dfs import get_mean_from_upper_age, \
     match_sim_ref_ages
@@ -281,12 +283,48 @@ def plot_prevalence_comparison_single_site(site, param_sets_to_plot=None,plt_dir
     plt.tight_layout()
     #plt.savefig(os.path.join(manifest.simulation_output_filepath, "_plots", f"prevalence_{site}.png"))
     plt.savefig(os.path.join(plt_dir,f"prevalence_{site}.png"))
+    
+def plot_prevalence_comparison_single_site_monthly(site, param_sets_to_plot=None,plt_dir=os.path.join(manifest.simulation_output_filepath, "_plots")):
+    # Plot comparison for a specific site, given specific param_set
+    sim_df = pd.read_csv(os.path.join(manifest.simulation_output_filepath, site, "prev_inc_by_age_month.csv"))
+    combined_df = prepare_prevalence_comparison_single_site(sim_df, site)
 
+    if param_sets_to_plot is None:
+        param_sets_to_plot = list(set(combined_df["param_set"]))
+
+    #todo Add error bars on data
+    combined_df = combined_df.groupby(["mean_age", "param_set","site_month"])\
+            .agg({"reference": "mean",
+                  "simulation": "mean"})\
+            .reset_index()
+    m = len(combined_df["site_month"].unique())
+    
+    fig, axs = plt.subplots(m, 1, figsize=(8, 4*m))
+    fig.suptitle(f'Prevalence vs. Age', ha="right")
+    mi = 0
+    for sm in combined_df["site_month"].unique():
+        sub = combined_df[combined_df["site_month"]==sm]
+        axs[mi].plot(sub["mean_age"], sub["reference"], label=f"Reference", marker='o')
+        for param_set, sdf in sub.groupby("param_set"):
+            if param_set in param_sets_to_plot:
+                axs[mi].plot(sdf["mean_age"], sdf["simulation"], label=f"Param set {param_set}", marker='s')
+                axs[mi].set(title=f"{sm}")
+        mi += 1
+    # for ax in axs.flat:
+    #     ax.set(xlabel='Age', ylabel='Prevalence')
+    plt.tight_layout()
+    plt.legend(bbox_to_anchor=(0.5, -0.2), loc='upper center')
+    plt.subplots_adjust(bottom=0.12)
+    
+    #plt.savefig(os.path.join(manifest.simulation_output_filepath, "_plots", f"prevalence_{site}.png"))
+    plt.savefig(os.path.join(plt_dir,f"prevalence_{site}_monthly.png"))
+    
+    
 def plot_prevalence_comparison_all_sites(param_sets_to_plot=None,plt_dir=os.path.join(manifest.simulation_output_filepath, "_plots")):
     for s in prevalence_sites:
         plot_prevalence_comparison_single_site(s, param_sets_to_plot=param_sets_to_plot,plt_dir=plt_dir)
 
 
 if __name__=="__main__":
-    #plot_prevalence_comparison_all_sites()
-    print(compute_prev_LL_for_all_sites())
+    plot_prevalence_comparison_single_site_monthly(site="namawala_2001", param_sets_to_plot=[1],plt_dir=os.path.join(manifest.simulation_output_filepath, "_plots"))
+    #print(compute_prev_LL_for_all_sites())
