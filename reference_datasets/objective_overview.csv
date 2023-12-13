@@ -1,0 +1,476 @@
+Site,objective,file_path,year,month,agebin,densitybin,n
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,80,0,124
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,80,0.5,56
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,80,5,33
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,80,50,8
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,80,500,0
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,15,0,150
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,15,0.5,44
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,15,5,26
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,15,50,15
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,15,500,2
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,5,0,62
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,5,0.5,3
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,5,5,3
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,5,50,2
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,9,5,500,2
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,80,0,123
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,80,0.5,49
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,80,5,15
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,80,50,0
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,80,500,1
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,15,0,66
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,15,0.5,42
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,15,5,43
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,15,50,3
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,15,500,0
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,5,0,23
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,5,0.5,4
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,5,5,6
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,5,50,2
+sapone_2018,infectiousness,infectiousness_Sapone_seasonal.csv,NA,5,5,500,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,0,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,0.5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,5,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,50,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,500,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,5000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,50000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,5,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,0,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,0.5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,50,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,500,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,5000,6
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,15,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,0,12
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,0.5,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,5,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,50,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,500,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,5000,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,7,80,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,0,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,0.5,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,50,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,500,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,5000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,5,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,0,5
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,0.5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,5,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,50,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,500,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,5000,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,15,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,0,14
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,0.5,5
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,5,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,50,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,500,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,5000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,9,80,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,0,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,0.5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,5,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,50,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,500,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,5000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,50000,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,5,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,0,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,0.5,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,5,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,50,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,500,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,5000,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,50000,1
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,15,500000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,0,14
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,0.5,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,5,2
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,50,3
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,500,4
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,5000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,50000,0
+dapelogo_2007,infectiousness,dapelogo_infectiousness.csv,1,1,80,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,0,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,0.5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,50,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,500,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,5000,5
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,5,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,0,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,0.5,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,5,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,50,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,500,8
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,5000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,15,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,0,16
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,0.5,2
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,5,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,50,2
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,500,5
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,5000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,7,80,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,0,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,0.5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,50,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,500,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,5000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,5,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,0,2
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,0.5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,50,4
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,500,8
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,5000,4
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,50000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,15,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,0,7
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,0.5,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,5,2
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,50,5
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,500,5
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,5000,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,9,80,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,0,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,0.5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,5,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,50,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,500,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,5000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,5,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,0,7
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,0.5,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,5,5
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,50,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,500,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,5000,1
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,15,500000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,0,13
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,0.5,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,5,2
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,50,6
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,500,3
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,5000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,50000,0
+laye_2007,infectiousness,laye_infectiousness.csv,1,1,80,500000,0
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,1,NA,71
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,4,NA,149
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,10,NA,180
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,20,NA,277
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,39,NA,316
+namawala_2001,asexual prevalence,namawala_prev_by_age_bin.csv,3,7,80,NA,145
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,1,8,15,NA,139
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,1,8,15,NA,138
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,1,8,5,NA,102
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,1,8,5,NA,102
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,1,8,80,NA,158
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,1,8,80,NA,158
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,1,15,NA,91
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,1,15,NA,92
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,1,5,NA,61
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,1,5,NA,61
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,1,80,NA,111
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,1,80,NA,111
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,5,15,NA,107
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,5,15,NA,108
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,5,5,NA,62
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,5,5,NA,63
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,2,5,80,NA,116
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,2,5,80,NA,116
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,3,1,15,NA,102
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,3,1,15,NA,103
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,3,1,5,NA,57
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,3,1,5,NA,57
+sapone_2018,gametocyte prevalence,sapone_prev_by_age_bin.csv,3,1,80,NA,110
+sapone_2018,asexual prevalence,sapone_prev_by_age_bin.csv,3,1,80,NA,113
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,5,NA,80
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,5,NA,52
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,5,NA,45
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,5,NA,37
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,5,NA,76
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,5,NA,38
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,5,NA,180
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,5,NA,83
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,5,NA,171
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,15,NA,96
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,15,NA,71
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,15,NA,65
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,15,NA,74
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,15,NA,126
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,15,NA,69
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,15,NA,199
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,15,NA,98
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,15,NA,220
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,30,NA,155
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,30,NA,102
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,30,NA,133
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,30,NA,58
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,30,NA,93
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,30,NA,68
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,30,NA,228
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,30,NA,112
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,30,NA,238
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,50,NA,216
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,50,NA,159
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,50,NA,149
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,50,NA,93
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,50,NA,177
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,50,NA,101
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,50,NA,276
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,50,NA,144
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,50,NA,295
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,76,NA,74
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,76,NA,52
+matsari_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,76,NA,42
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,76,NA,34
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,76,NA,64
+rafin_marke_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,76,NA,34
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,2,76,NA,101
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,7,76,NA,50
+sugungum_1970,asexual prevalence,garki_prev_by_age_bin.csv,2,10,76,NA,93
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,15,NA,96
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,15,NA,71
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,15,NA,65
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,15,NA,74
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,15,NA,126
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,15,NA,69
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,15,NA,199
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,15,NA,98
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,15,NA,220
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,30,NA,155
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,30,NA,102
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,30,NA,133
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,30,NA,58
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,30,NA,93
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,30,NA,68
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,30,NA,228
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,30,NA,112
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,30,NA,238
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,5,NA,80
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,5,NA,52
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,5,NA,45
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,5,NA,36
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,5,NA,76
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,5,NA,38
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,5,NA,180
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,5,NA,83
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,5,NA,171
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,50,NA,216
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,50,NA,159
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,50,NA,149
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,50,NA,93
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,50,NA,177
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,50,NA,101
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,50,NA,276
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,50,NA,144
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,50,NA,295
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,76,NA,74
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,76,NA,52
+matsari_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,76,NA,42
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,76,NA,34
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,76,NA,64
+rafin_marke_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,76,NA,34
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,2,76,NA,101
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,7,76,NA,50
+sugungum_1970,asexual density,garki_par_dens_by_age_bin.csv,2,10,76,NA,93
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,15,NA,96
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,15,NA,71
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,15,NA,65
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,15,NA,74
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,15,NA,126
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,15,NA,69
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,15,NA,199
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,15,NA,98
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,15,NA,220
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,30,NA,155
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,30,NA,102
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,30,NA,133
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,30,NA,58
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,30,NA,93
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,30,NA,68
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,30,NA,228
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,30,NA,112
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,30,NA,238
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,5,NA,80
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,5,NA,52
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,5,NA,45
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,5,NA,36
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,5,NA,76
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,5,NA,38
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,5,NA,180
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,5,NA,83
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,5,NA,171
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,50,NA,216
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,50,NA,159
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,50,NA,149
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,50,NA,93
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,50,NA,177
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,50,NA,101
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,50,NA,276
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,50,NA,144
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,50,NA,295
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,76,NA,74
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,76,NA,52
+matsari_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,76,NA,42
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,76,NA,34
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,76,NA,64
+rafin_marke_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,76,NA,34
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,2,76,NA,101
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,7,76,NA,50
+sugungum_1970,gametocyte prevalence,garki_par_dens_by_age_bin.csv,2,10,76,NA,93
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,15,NA,96
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,15,NA,71
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,15,NA,65
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,15,NA,74
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,15,NA,126
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,15,NA,69
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,15,NA,199
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,15,NA,98
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,15,NA,220
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,30,NA,155
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,30,NA,102
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,30,NA,133
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,30,NA,58
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,30,NA,93
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,30,NA,68
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,30,NA,228
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,30,NA,112
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,30,NA,238
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,5,NA,80
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,5,NA,52
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,5,NA,45
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,5,NA,36
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,5,NA,76
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,5,NA,38
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,5,NA,180
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,5,NA,83
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,5,NA,171
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,50,NA,216
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,50,NA,159
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,50,NA,149
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,50,NA,93
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,50,NA,177
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,50,NA,101
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,50,NA,276
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,50,NA,144
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,50,NA,295
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,76,NA,74
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,76,NA,52
+matsari_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,76,NA,42
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,76,NA,34
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,76,NA,64
+rafin_marke_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,76,NA,34
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,2,76,NA,101
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,7,76,NA,50
+sugungum_1970,gametocyte density,garki_par_dens_by_age_bin.csv,2,10,76,NA,93
+sapone_2018,asexual density,par_dens_sapone_2018,1,8,80,NA,159
+sapone_2018,asexual density,par_dens_sapone_2018,1,8,15,NA,140
+sapone_2018,asexual density,par_dens_sapone_2018,1,8,5,NA,102
+sapone_2018,asexual density,par_dens_sapone_2018,2,5,80,NA,119
+sapone_2018,asexual density,par_dens_sapone_2018,2,5,15,NA,109
+sapone_2018,asexual density,par_dens_sapone_2018,2,5,5,NA,63
+sapone_2018,asexual density,par_dens_sapone_2018,2,1,80,NA,111
+sapone_2018,asexual density,par_dens_sapone_2018,2,1,15,NA,92
+sapone_2018,asexual density,par_dens_sapone_2018,2,1,5,NA,61
+sapone_2018,asexual density,par_dens_sapone_2018,3,1,80,NA,113
+sapone_2018,asexual density,par_dens_sapone_2018,3,1,15,NA,103
+sapone_2018,asexual density,par_dens_sapone_2018,3,1,5,NA,57
+sapone_2018,gametocyte density,par_dens_sapone_2018,1,8,80,NA,159
+sapone_2018,gametocyte density,par_dens_sapone_2018,1,8,15,NA,140
+sapone_2018,gametocyte density,par_dens_sapone_2018,1,8,5,NA,102
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,5,80,NA,119
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,5,15,NA,109
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,5,5,NA,63
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,1,80,NA,111
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,1,15,NA,92
+sapone_2018,gametocyte density,par_dens_sapone_2018,2,1,5,NA,61
+sapone_2018,gametocyte density,par_dens_sapone_2018,3,1,80,NA,113
+sapone_2018,gametocyte density,par_dens_sapone_2018,3,1,15,NA,103
+sapone_2018,gametocyte density,par_dens_sapone_2018,3,1,5,NA,57
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,7,5,NA,8
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,7,15,NA,9
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,7,80,NA,27
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,9,5,NA,8
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,9,15,NA,14
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,9,80,NA,24
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,1,5,NA,10
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,1,15,NA,14
+dapelogo_2007,asexual density,par_dens_extract_Dapelogo_2007.csv,1,1,80,NA,25
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,7,5,NA,9
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,7,15,NA,11
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,7,80,NA,27
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,9,5,NA,8
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,9,15,NA,11
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,9,80,NA,25
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,1,5,NA,10
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,1,15,NA,14
+dapelogo_2007,gametocyte density,par_dens_extract_Dapelogo_2007.csv,1,1,80,NA,25
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,7,5,NA,4
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,7,15,NA,18
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,7,80,NA,27
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,9,5,NA,3
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,9,15,NA,18
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,9,80,NA,25
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,1,5,NA,2
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,1,15,NA,20
+laye_2007,asexual density,par_dens_extract_Laye_2007.csv,1,1,80,NA,27
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,7,5,NA,5
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,7,15,NA,21
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,7,80,NA,27
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,9,5,NA,3
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,9,15,NA,19
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,9,80,NA,25
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,1,5,NA,2
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,1,15,NA,20
+laye_2007,gametocyte density,par_dens_extract_Laye_2007.csv,1,1,80,NA,27
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,1,NA,27
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,2,NA,16
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,4,NA,40
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,9,NA,63
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,14,NA,35
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,19,NA,40
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,39,NA,93
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,59,NA,30
+ndiop_1993,incidence,Cameron_age_incidence_prev.csv,NA,NA,85,NA,8
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,1,NA,13
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,2,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,3,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,4,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,5,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,6,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,7,NA,14
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,8,NA,14
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,9,NA,14
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,10,NA,14
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,11,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,12,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,13,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,14,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,15,NA,10
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,20,NA,42
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,25,NA,32
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,30,NA,27
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,40,NA,42
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,50,NA,29
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,60,NA,21
+dielmo_1990,incidence,Cameron_age_incidence_prev.csv,NA,NA,85,NA,9
