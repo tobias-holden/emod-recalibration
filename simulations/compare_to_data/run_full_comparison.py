@@ -21,21 +21,32 @@ def compute_LL_across_all_sites_and_metrics(numOf_param_sets = 64):
     infectious_LL = compute_infectious_LL_for_all_sites(numOf_param_sets)
     density_LL = compute_parasite_density_LL_for_all_sites(numOf_param_sets)
     prevalence_LL = compute_prev_LL_for_all_sites(numOf_param_sets)
-    gametocyte_prevalence_LL = compute_gametocyte_prev_LL_for_all_sites(numOf_param_sets)
+    #gametocyte_prevalence_LL = compute_gametocyte_prev_LL_for_all_sites(numOf_param_sets)
     incidence_LL = compute_inc_LL_for_all_sites(numOf_param_sets)
     dead_LL = compute_dead_LL_for_all_sites(numOf_param_sets)
 
 
     #density_LL_w=density_LL
     #density_LL_w['ll'] = [float(val)/10 for val in density_LL['ll']]
-    #print(density_LL_w)
-    combined = pd.concat([infectious_LL, density_LL, prevalence_LL, incidence_LL, dead_LL, gametocyte_prevalence_LL])
+    #print("ILL")
+    #print(incidence_LL)
+    combined = pd.concat([infectious_LL, incidence_LL, density_LL, prevalence_LL, dead_LL])
+    
+    weighting_rules = pd.read_csv('/projects/b1139/basel-hackathon-2023/reference_datasets/objective_weights.csv')
+    
+    b=pd.merge(combined, weighting_rules,  how='left', left_on=['site','metric'], right_on = ['site','metric'])
+    b['weight'].fillna(0.1, inplace=True)
+    b['ll'] = b['ll'] * b['weight']
+    #print(b.to_string())
+    #print(b.groupby("param_set").agg({"ll": lambda x: x.sum(skipna=False)}).reset_index().sort_values(by=['ll']).to_string())
+    #print(b.groupby("param_set").agg({"weighted_LL": lambda x: x.sum(skipna=False)}).reset_index().sort_values(by=['weighted_LL']).to_string())
+    
     #combined = pd.concat([density_LL])
-    print(combined.to_string())
+    #print(combined.to_string())
 
     #fixme - Eventually, this will need to be fancier way of weighting LL across the diverse metrics/sites
     #fixme - For now, just naively add all log-likelihoods
-    return combined.groupby("param_set").agg({"ll": lambda x: x.sum(skipna=False)}).reset_index()
+    return b.groupby("param_set").agg({"ll": lambda x: x.sum(skipna=False)}).reset_index().sort_values(by=['ll'])
 
 def plot_all_comparisons(param_sets_to_plot=None,plt_dir=os.path.join(manifest.simulation_output_filepath, "_plots")):
     plot_incidence_comparison_all_sites(param_sets_to_plot=param_sets_to_plot,plt_dir=plt_dir)
