@@ -65,7 +65,7 @@ def set_param_fn(config):
     # config.parameters.pop("Serialized_Population_Filenames")
     
     # update outputs
-    #config.parameters.Enable_Default_Reporting = 0
+    config.parameters.Enable_Default_Reporting = 0
     #config.parameters[ "logLevel_default" ] = "WARNING"
 
     return config
@@ -186,15 +186,42 @@ def build_camp(site, coord_df):
     camp = build_standard_campaign_object(manifest)
 
     # === EIR === #
-
-    # set monthly eir for site - TODO - change to daily EIR
-    monthly_eirs = pd.read_csv(manifest.input_files_path / coord_df.at[site, 'EIR_filepath'])
-    # TODO - currently recycles first 12 values; should update to use multiple years if provided
-    add_scheduled_input_eir(camp, monthly_eir=monthly_eirs.loc[monthly_eirs.index[0:12], site].tolist(),
-                            start_day=0, age_dependence="SURFACE_AREA_DEPENDENT")
-
+    print("EIR")                        
+    if (not pd.isna(coord_df.at[site,'daily_EIR_filepath'])) and (not (coord_df.at[site,'daily_EIR_filepath'] == '')):
+        # set daily eir for site
+        daily_eirs = pd.read_csv(manifest.input_files_path / coord_df.at[site,'daily_EIR_filepath'])
+        init_eirs = daily_eirs[daily_eirs['year']==0]
+        add_scheduled_input_eir(camp, 
+                                daily_eir = init_eirs['daily_eir'].tolist(),
+                                start_day = 1,
+                                age_dependence = "SURFACE_AREA_DEPENDENT",
+                                intervention_name = f"DailyEIR_Year1")
+        eir_years = daily_eirs['year'].unique()
+        eir_years = eir_years[eir_years > 0]
+        if len(eir_years > 0):
+            print("Adding EIRs")
+            add_eirs(camp, daily_eirs)
+    else:
+        # Convert monthly EIR to daily EIR
+        monthly_eirs = pd.read_csv(manifest.input_files_path / coord_df.at[site, 'EIR_filepath'])
+        monthly_eirs = monthly_eirs.loc[monthly_eirs.index[0:12], site].tolist()
+        month_lengths = [31.00,28.00,31.00,30.00,31.00,30.00,31.00,31.00,30.00,31.00,30.00,31.00]
+        daily_eirs = []
+        for i in range(len(monthly_eirs)):
+            print(f"Month {i}")
+            print(f"+ {month_lengths[i]}")
+            me = monthly_eirs[i]
+            de = [me/month_lengths[i]] * month_lengths[i]
+            print(de)
+            daily_eirs = daily_eirs + de
+        print("Total")
+        print(len(daily_eirs))
+        print(daily_eirs)
+        add_scheduled_input_eir(camp, daily_eir=daily_eirs,
+                                start_day=0, age_dependence="SURFACE_AREA_DEPENDENT", 
+                                intervention_name=f"MonthlyToDailyEIR_Year1")
     # === INTERVENTIONS === #
-
+    print("CM") 
     # health-seeking
     if (not pd.isna(coord_df.at[site, 'CM_filepath'])) and (not (coord_df.at[site, 'CM_filepath'] == '')):
         hs_df = pd.read_csv(manifest.input_files_path / coord_df.at[site, 'CM_filepath'])
@@ -217,6 +244,7 @@ def build_camp(site, coord_df):
             # case management for NMFs
             add_nmf_hs(camp, hs_df, nmf_df)
     # SMC
+    print("SMC") 
     if (not pd.isna(coord_df.at[site, 'SMC_filepath'])) and (not (coord_df.at[site, 'SMC_filepath'] == '')):
         smc_df = pd.read_csv(manifest.input_files_path / coord_df.at[site, 'SMC_filepath'])
     else:
@@ -226,6 +254,7 @@ def build_camp(site, coord_df):
         add_smc(camp,smc_df)
 
     # ITNS
+    print("ITN") 
     itn_df = pd.DataFrame()
     if (not pd.isna(coord_df.at[site, 'ITN_filepath'])) and (not (coord_df.at[site, 'ITN_filepath'] == '')):
         if (not pd.isna(coord_df.at[site, 'ITN_age_filepath'])) and (not (coord_df.at[site, 'ITN_age_filepath'] == '')):
@@ -248,6 +277,18 @@ def build_camp(site, coord_df):
         add_broadcasting_survey(camp, survey_days=survey_days)
 
     return camp
+
+
+def add_eirs(camp, eir_df):
+    daily_eirs = eir_df
+    for y in range(1,60):
+        eirs = daily_eirs[daily_eirs['year']==y]
+        add_scheduled_input_eir(camp, 
+                                daily_eir = eirs['daily_eir'].tolist(),
+                                start_day = 1+(y*365),
+                                age_dependence = "SURFACE_AREA_DEPENDENT",
+                                intervention_name = f"DailyEIR_Year{y+1}")
+                                
 
 def add_smc(camp,smc_df):
     for r in range(len(smc_df)):                                                                             
