@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH -A b1139
 #SBATCH -p b1139
-#SBATCH -t 24:00:00
+#SBATCH -t 72:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=64G
-#SBATCH --job-name="calib_iter_2p"
-#SBATCH --error=log/calib_iter.%j.err
-#SBATCH --output=log/calib_iter.%j.out
+#SBATCH --mem=8G
+#SBATCH --job-name="calib_test_multi"
+#SBATCH --error=log/calib_test_multi.%j.err
+#SBATCH --output=log/calib_test_multi.%j.out
 
 
 module purge all
