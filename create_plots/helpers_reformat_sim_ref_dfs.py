@@ -61,11 +61,12 @@ def get_age_bin_averages(sim_df):
         warnings.warn("Different population sizes found across years within an age group... "
                       "need to set up weighted averaging of parasite densities... "
                       "Since this is not yet implemented, we are only including pop 1000 sizes for each age group")
-        sim_df = sim_df[sim_df['Pop'] == 1000]
+        #sim_df = sim_df[sim_df['Pop'] == 1000]
         age_agg_sim_df = sim_df.groupby(['month', 'mean_age', 'agebin', 'densitybin', 'Site']).agg(
             asexual_par_dens_freq=('asexual_par_dens_freq', np.nanmean),
             gametocyte_dens_freq=('gametocyte_dens_freq', np.nanmean),
             Pop=('Pop', np.nanmean)).reset_index()
+        
         # If this warning is triggered, use the population size to calculate the number of individuals in each density
         # bin, then aggregate the sum, then divide by the total aggregated population
         # todo: NYI
