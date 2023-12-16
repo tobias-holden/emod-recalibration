@@ -105,7 +105,7 @@ class Problem:
             self.n += 1
             np.savetxt(f"{self.workdir}/emod.n.txt", [self.n])
             
-        elif max(links.values())[0] > self.ymax:
+        else: #max(links.values())[0] > self.ymax:
             self.ymax = max(links.values()) #weighted_lf
             best_x = max(links,key=links.get)
             #print(best_x)
@@ -132,7 +132,7 @@ class Problem:
         
         return torch.tensor(xc,dtype=torch.float64), torch.tensor(yc)
 
-output_dir = "output/sapone_vital_test"
+output_dir = "output/sapone_vital_test2"
 #best_dir = "checkpoints/9Site" 
 
 # Delete everything and restart from scratch 
@@ -143,7 +143,7 @@ output_dir = "output/sapone_vital_test"
 # at beginning of workflow, cleanup all sbatch scripts for analysis
 clean_analyzers()
 
-problem = Problem(workdir="output/sapone_vital_test")
+problem = Problem(workdir="output/sapone_vital_test2")
 
 # Create the GP model
 # See emulators/GP.py for a list of GP models
@@ -152,12 +152,12 @@ model = ExactGP(noise_constraint=GreaterThan(1e-6))
 
 # Create and combine multiple batch generators
 #batch_size 64 when running in production
-tts = TurboThompsonSampling(batch_size=5, n_candidates=10000, failure_tolerance=4, dim=problem.dim) #64
+tts = TurboThompsonSampling(batch_size=10, n_candidates=10000, failure_tolerance=4, dim=problem.dim) #64
 #ei = ExpectedImprovement(batch_size=50, num_restarts=20, raw_samples=1024, dim=problem.dim)
 batch_generator = tts#ei#BatchGeneratorArray([tts, ei])
 
 # Create the workflow
-bo = BO(problem=problem, model=model, batch_generator=batch_generator, checkpointdir=output_dir, max_evaluations=20)
+bo = BO(problem=problem, model=model, batch_generator=batch_generator, checkpointdir=output_dir, max_evaluations=150)
 
 # Sample and evaluate sets of parameters randomly drawn from the unit cube
 
@@ -173,7 +173,7 @@ bo = BO(problem=problem, model=model, batch_generator=batch_generator, checkpoin
 #                                            0.15, 0.511735322,
 #                                            0.005, 0.4151, 0.5, 0]])
                                             
-bo.initRandom(5, n_batches = 1, Xpriors = [[0.000000000765, 0.2, 0.002, 0.0615,
+bo.initRandom(100, n_batches = 5, Xpriors = [[0.000000000765, 0.2, 0.002, 0.0615,
                                            0.708785, 0.77282, 0.635, 0.5183, 0.5886,
                                            0.15, 0.511735322,
                                            0.005, 0.4151, 0.5, 0]])                                          
