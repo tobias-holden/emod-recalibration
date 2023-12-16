@@ -1,4 +1,5 @@
 import os
+import warnings
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Union
@@ -50,19 +51,21 @@ class AnnualSummaryReportAnalyzer(BaseAnalyzer):
         prevalence[prevalence == 0] = np.nan
         if np.isnan(prevalence).all():
             prevalence = [0]
-        prevalence = np.nanmean(prevalence, axis=0)
+        with warnings.catch_warnings():
+            warnings.filterwarnings(action='ignore', message='Mean of empty slice')
+            prevalence = np.nanmean(prevalence, axis=0)
 
         incidence = datatemp['DataByTimeAndAgeBins']['Annual Clinical Incidence by Age Bin']
         incidence = np.array(np.array([i for i in incidence]))
         #incidence[incidence == 0] = np.nan
         if np.isnan(incidence).all():
             incidence = [0]
-        print(incidence)            
+        #print(incidence)            
         incidence = np.nanmean(incidence, axis=0)
 
         pop = datatemp['DataByTimeAndAgeBins']['Average Population by Age Bin']
         pop = np.array(np.array([i for i in pop]))
-        print(pop[pop==0])
+        #print(pop[pop==0])
         for i in range(len(pop)):
          #   print(pop[i])
             if np.all(pop == 0):
@@ -72,7 +75,7 @@ class AnnualSummaryReportAnalyzer(BaseAnalyzer):
          #   pop
         if np.isnan(pop).all():
             pop = [0]
-        print(pop)            
+        #print(pop)            
         pop = np.nanmean(pop, axis=0)
 
         df = pd.DataFrame(list(zip(age_bins, prevalence, incidence, pop)),
