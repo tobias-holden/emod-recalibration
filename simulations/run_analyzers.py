@@ -11,6 +11,7 @@ from idmtools.core.platform_factory import Platform
 from idmtools.analysis.platform_anaylsis import PlatformAnalysis
 from idmtools.analysis.analyze_manager import AnalyzeManager
 from idmtools.core import ItemType
+from analyzers.EventRecorderSummaryAnalyzer import EventRecorderSummaryAnalyzer
 from analyzers.AnnualSummaryReportAnalyzer import AnnualSummaryReportAnalyzer
 from analyzers.ParDensAgeAnalyzer import ParDensAgeAnalyzer
 from analyzers.InfectiousnessByParDensAgeAnalyzer import InfectiousnessByParDensAgeAnalyzer
@@ -47,6 +48,7 @@ def run_analyzers(site: str, expid: str = None, characteristic: bool = False) ->
         # for expt_name, id in exp_name_id.items():
         # site = expt_name.replace('validation_', '')
         report_start_day = int(coord_df.at[site, 'report_start_day'])
+        simulation_duration=int(coord_df.at[site, 'simulation_duration'])
         # determine the analyzers to run for each site
         analyzers = []
         analyzer_args = []
@@ -54,39 +56,50 @@ def run_analyzers(site: str, expid: str = None, characteristic: bool = False) ->
         wdir=manifest.simulation_output_filepath #'/home/aew2948/test_analyzer'#
         if not os.path.exists(wdir):
             os.mkdir(wdir)
+        if coord_df.at[site, 'include_EventReport']:
+            analyzer_args.append({'expt_name':site,
+                                 'sweep_variables':['Run_Number', 'Site', 'param_set'],
+                                 'time_cutoff': 0,
+                                 'output_filename':"event_counts"})
+            analyzers.append(EventRecorderSummaryAnalyzer(expt_name=site,
+                                                          sweep_variables = ['Run_Number', 'Site', 'param_set'],
+                                                          working_dir = wdir,
+                                                          time_cutoff=0,
+                                                          output_filename="event_counts"))
+            
         if coord_df.at[site, 'include_MonthlyMalariaSummaryReport']:
             if coord_df.at[site, 'age_parasite_density']:
                 #analyzers.append(ParDensAgeAnalyzer)
                 analyzer_args.append({'expt_name': site,
                                       'sweep_variables': ['Run_Number', 'Site', 'param_set'],
                                       'start_year': int(report_start_day / 365),
-                                      'end_year': int(coord_df.at[site, 'simulation_duration'] / 365)})
+                                      'end_year': int(simulation_duration / 365)})
                 analyzers.append(ParDensAgeAnalyzer(expt_name= site,
                                       sweep_variables= ['Run_Number', 'Site', 'param_set'],
                                       start_year= int(report_start_day / 365),
-                                      end_year= int(coord_df.at[site, 'simulation_duration'] / 365),
+                                      end_year= int(simulation_duration / 365),
                                       working_dir=wdir))
             if coord_df.at[site, 'infectiousness_to_mosquitos']:
                 #analyzers.append(InfectiousnessByParDensAgeAnalyzer)
                 analyzer_args.append({'expt_name': site,
                                       'sweep_variables': ['Run_Number', 'Site', 'param_set'],
                                       'start_year': int(report_start_day / 365),
-                                      'end_year': int(coord_df.at[site, 'simulation_duration'] / 365)})
+                                      'end_year': int(simulation_duration / 365)})
                 analyzers.append(InfectiousnessByParDensAgeAnalyzer(expt_name= site,
                                       sweep_variables= ['Run_Number', 'Site', 'param_set'],
                                       start_year= int(report_start_day / 365),
-                                      end_year= int(coord_df.at[site, 'simulation_duration'] / 365),
+                                      end_year= int(simulation_duration / 365),
                                       working_dir=wdir))
             if coord_df.at[site, 'age_prevalence']:
                 #analyzers.append(MonthlySummaryReportAnalyzer)
                 analyzer_args.append({'expt_name': site,
                                       'sweep_variables': ['Run_Number', 'Site', 'param_set'],
                                       'start_year': int(report_start_day / 365),
-                                      'end_year': int(coord_df.at[site, 'simulation_duration'] / 365)})
+                                      'end_year': int(simulation_duration / 365)})
                 analyzers.append(MonthlySummaryReportAnalyzer(expt_name= site,
                                       sweep_variables= ['Run_Number', 'Site', 'param_set'],
                                       start_year= int(report_start_day / 365),
-                                      end_year= int(coord_df.at[site, 'simulation_duration'] / 365),
+                                      end_year= int(simulation_duration / 365),
                                       working_dir=wdir))
         if coord_df.at[site, 'include_AnnualMalariaSummaryReport']:
             #analyzers.append(AnnualSummaryReportAnalyzer)
