@@ -1,27 +1,27 @@
-site,metric,n,weight
-dapelogo_2007,asex_density,139,0.004791616
-dapelogo_2007,gamet_density,140,0.004826088
-dapelogo_2007,infectiousness,143,0.004929505
-dielmo_1990,incidence,371,0.012789134
-laye_2007,asex_density,144,0.004963977
-laye_2007,gamet_density,149,0.005136337
-laye_2007,infectiousness,149,0.005136337
-matsari_1970,asex_density,1491,0.051397842
-matsari_1970,prevalence,1491,0.051397842
-matsari_1970,gamet_density,1491,0.051397842
-matsari_1970,gamet_prevalence,1491,0.051397842
-namawala_2001,asex_density,1138,0.039229205
-ndiop_1993,incidence,352,0.012134165
-rafin_marke_1970,asex_density,1141,0.039332621
-rafin_marke_1970,prevalence,1142,0.039367093
-rafin_marke_1970,gamet_density,1141,0.039332621
-rafin_marke_1970,gamet_prevalence,1141,0.039332621
-sapone_2018,asex_density,1229,0.042366162
-sapone_2018,prevalence,1222,0.042124858
-sapone_2018,gamet_density,1229,0.042366162
-sapone_2018,gamet_prevalence,1216,0.041918025
-sapone_2018,infectiousness,907,0.031266159
-sugungum_1970,asex_density,2488,0.085766486
-sugungum_1970,prevalence,2488,0.085766486
-sugungum_1970,gamet_density,2488,0.085766486
-sugungum_1970,gamet_prevalence,2488,0.085766486
+"","Site","metric","n","tot","weight"
+"1","dapelogo_2007","asexual density",139,6632,0.0209589867310012
+"2","dapelogo_2007","gametocyte density",140,6638,0.0210906899668575
+"3","dapelogo_2007","infectiousness",143,1199,0.119266055045872
+"4","dielmo_1990","incidence",371,723,0.51313969571231
+"5","laye_2007","asexual density",144,6632,0.0217129071170084
+"6","laye_2007","gametocyte density",149,6638,0.0224465200361555
+"7","laye_2007","infectiousness",149,1199,0.124270225187656
+"8","matsari_1970","asexual density",1491,6632,0.224819059107358
+"9","matsari_1970","asexual prevalence",1491,7481,0.199304905761262
+"10","matsari_1970","gametocyte density",1491,6638,0.224615848147032
+"11","matsari_1970","gametocyte prevalence",1491,6336,0.23532196969697
+"12","namawala_2001","asexual prevalence",1138,7481,0.152118700708461
+"13","ndiop_1993","incidence",352,723,0.48686030428769
+"14","rafin_marke_1970","asexual density",1141,6632,0.172044632086852
+"15","rafin_marke_1970","asexual prevalence",1142,7481,0.152653388584414
+"16","rafin_marke_1970","gametocyte density",1141,6638,0.171889123229889
+"17","rafin_marke_1970","gametocyte prevalence",1141,6336,0.180082070707071
+"18","sapone_2018","asexual density",1229,6632,0.185313630880579
+"19","sapone_2018","asexual prevalence",1222,7481,0.163347146103462
+"20","sapone_2018","gametocyte density",1229,6638,0.185146128351913
+"21","sapone_2018","gametocyte prevalence",1216,6336,0.191919191919192
+"22","sapone_2018","infectiousness",907,1199,0.756463719766472
+"23","sugungum_1970","asexual density",2488,6632,0.375150784077201
+"24","sugungum_1970","asexual prevalence",2488,7481,0.332575858842401
+"25","sugungum_1970","gametocyte density",2488,6638,0.374811690268153
+"26","sugungum_1970","gametocyte prevalence",2488,6336,0.392676767676768
