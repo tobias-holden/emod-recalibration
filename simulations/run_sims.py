@@ -34,7 +34,7 @@ def submit_sim(site=None, nSims=1, characteristic=False, priority=manifest.prior
     # Create a platform
     # Show how to dynamically set priority and node_group
     platform1 = Platform("SLURM_LOCAL", job_directory=manifest.job_directory, partition='b1139', time='6:00:00', 
-                            account='b1139', modules=['singularity'], max_running_jobs=100, mem=2000)
+                            account='b1139', modules=['singularity'], max_running_jobs=1000, mem=2000)
     platform2 = Platform("SLURM_LOCAL", job_directory=manifest.job_directory, partition='normal', time='6:00:00', 
                             account='p30781', modules=['singularity'], max_running_jobs=400, mem=2000)
     platform3 = Platform("SLURM_LOCAL", job_directory=manifest.job_directory, partition='short', time='3:00:00', 
