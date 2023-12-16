@@ -35,7 +35,7 @@ class EventRecorderSummaryAnalyzer(IAnalyzer):
         df = data[self.filenames[0]]
         df = df[df["Time"] >= self.time_cutoff].copy()
         df['Age_Year'] = [age // 365 for age in df['Age']]
-        df2 = df.groupby(['Time',"Age_Year",'Event_Name','Trial_Arm'])['Individual_ID'].agg('count').reset_index()
+        df2 = df.groupby(['Time',"Age_Year",'Event_Name'])['Individual_ID'].agg('count').reset_index()
         df2.rename(columns={"Individual_ID":"Event_Count"})
         # add tags
         for sweep_var in self.sweep_variables:
@@ -52,8 +52,5 @@ class EventRecorderSummaryAnalyzer(IAnalyzer):
 
         adf = pd.concat(selected).reset_index(drop=True)
         adf.to_csv(
-            os.path.join(self.working_dir, expt_name, "".join((self.output_filename,".csv"))),
-            os.path.join(self.working_dir, expt_name, "".join((self.output_filename, ".csv"))),
-            index=False,
-            index_label=False,
-        )
+            os.path.join(self.working_dir, self.expt_name, "".join((self.output_filename,".csv"))),
+            index=False)
