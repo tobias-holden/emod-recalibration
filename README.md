@@ -109,3 +109,23 @@ These files below are all contained within /simulations and are some of the most
 - `BO`: this function creates the calibration workflow. You supply the problem (largely calling myfunc and doing basic processing as well as monitoring best fit), model (emulator), batch_generator (acquisition function), checkpointdir (where the checkpoint pickup files will be saved), and max_evaluations.
     - Maximum evaluations are the total number of parameter sets that you are requesting the BO workflow to test, including the initialized set. 7000-8000 is likely a good range for production but will depend on how many dimensions (parameters) are under calibration. This can be changed during picking up from a checkpoint while the batch size cannot (without manual editing).  
 # emod-recalibration
+
+### Incidence
+
+Loss function = Gamma Log Likelihood *across ages*,  summed
+
+### Prevalence
+
+Loss function = Gamma Log Likelihood *by month*, *across ages*, summed
+
+### Asexual Density
+
+Loss function = Negative Binomial Log Likelihood *by age and month*, *across density bins*, summed
+
+### Gametocyte Density
+
+Loss function = Negative Binomial Log Likelihood *by age and month*, *across density bins*, summed
+
+### Infectiousness
+
+Loss function = Negative Binomial Log Likelihood *by age and month*, *across gametocyte density bins and infectiousness levels*, summed
